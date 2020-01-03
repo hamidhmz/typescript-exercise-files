@@ -1,0 +1,6 @@
+core type in ts:
+    number (all numbers ,  no differentiation between integers or floats)
+string 
+    all text values
+boolean     
+    just true and false

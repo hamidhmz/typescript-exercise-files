@@ -1,0 +1,19 @@
+{
+  "name": "exercisefile",
+  "version": "1.0.0",
+  "description": "this is just for exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamidhmz/typescript-exercise-files.git"
+  },
+  "author": "hamidreza nasrollahi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hamidhmz/typescript-exercise-files/issues"
+  },
+  "homepage": "https://github.com/hamidhmz/typescript-exercise-files#readme"
+}
