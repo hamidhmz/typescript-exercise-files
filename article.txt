@@ -4,3 +4,5 @@ string
     all text values
 boolean     
     just true and false
+object
+    any javascript object more specific types
