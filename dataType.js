@@ -116,3 +116,13 @@ let promise = new Promise(function (resolve, reject) {
     // after 1 second signal that the job is finished with an error
     setTimeout(() => reject(new Error("Whoops!")), 1000);
 });
+class Department2 {
+    constructor(n) {
+        this.name = n;
+    }
+    describe() {
+        console.log('Department: ' + this.name);
+    }
+}
+const accounting85 = new Department2('Accounting');
+accounting85.describe();
