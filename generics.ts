@@ -32,7 +32,7 @@ function merge(objA: object, objB: object) {
   return Object.assign(objA, objB);
 }
 
-const mergedObj = merge({ name: "Max" }, { age: 30 }); // we can use type casting but it is not common
+const mergedObj = merge({ name: "Max" }, { age: 30 }); // we can use type casting but it is not common eg: as {name:string,age:number}
 
 mergedObj.name; // type script doesn't know this
 
