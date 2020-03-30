@@ -1,11 +1,13 @@
 import express, { Request, Response, NextFunction } from 'express';
 import { json } from 'body-parser';
-import { todoes } from './routes/index';
+import { todoesRoute } from './routes/index';
 const app = express();
 const port = 3001;
-
-app.use('/todoes', todoes);
 app.use(json());
+// app.all('*',(req,res,next)=>{
+// 	res.send(req.body)
+// })
+app.use('/todoes', todoesRoute);
 
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
 	res.status(500).send(err);

@@ -1,21 +1,14 @@
 import { Router, Request, Response } from 'express';
+import { TodoPost, TodoGet,TodoDelete,TodoPatch } from '../controllers';
 
 const route = Router();
 
-route.get('/', (req: Request, res: Response) => {
-	res.send('GET todoes');
-});
+route.get('/', TodoGet);
 
-route.post('/', (req: Request, res: Response) => {
-	res.send('post todoes');
-});
+route.post('/', TodoPost);
 
-route.delete('/:id', (req: Request, res: Response) => {
-	res.send('delete todoes');
-});
+route.delete('/:id', TodoDelete);
 
-route.patch('/:id', (req: Request, res: Response) => {
-	res.send('patch todoes');
-});
+route.patch('/:id', TodoPatch);
 
 export default route;

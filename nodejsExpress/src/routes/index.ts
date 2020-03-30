@@ -1,3 +1,3 @@
-import todoes from './todoes';
+import todoesRoute from './todoes';
 
-export { todoes };
+export { todoesRoute };
