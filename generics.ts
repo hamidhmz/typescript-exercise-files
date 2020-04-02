@@ -57,7 +57,7 @@ const mergedObj4 = merge2<{ name: string; hobbies: string }, { age: number }>(
 /* -------------------------------------------------------------------------- */
 /*                              type constraints                              */
 /* -------------------------------------------------------------------------- */
-const mergedObj5 = merge2({ name: "Max" }, 30); //  we don't wanna argument 0 we should use constraints
+const mergedObj5 = merge2({ name: "Max" }, 30); //  we don't wanna argument 30 we should use constraints
 
 function merge3<T extends object, U extends object>(objA: T, objB: U) {
   return Object.assign(objA, objB);
